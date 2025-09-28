@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservationUserDetailActivity">
+
+    <!-- NestedScrollView for scrollable content -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- ConstraintLayout that holds the content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Name for Reservation"
+                android:textColor="@color/color1"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="1dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView45">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView37name"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Full Name" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hotel_name_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/search_border_rounded"
+                        android:backgroundTint="#F0F0F0"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/editTextText_name"
+                            android:layout_width="320dp"
+                            android:layout_height="45dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Email" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_destination_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/search_border_rounded"
+                        android:backgroundTint="#F0F0F0"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/editTextTextEmail"
+                            android:layout_width="320dp"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewMobile"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Mobile" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_destination_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/search_border_rounded"
+                        android:backgroundTint="#F0F0F0"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/editTextTextMobile"
+                            android:layout_width="320dp"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCountry"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Country" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_destination_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/search_border_rounded"
+                        android:backgroundTint="#F0F0F0"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/editTextTextCountry"
+                            android:layout_width="236dp"
+                            android:layout_height="42dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:layout_editor_absoluteX="7dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bottom_navigation"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.846"
+                            app:layout_constraintStart_toEndOf="@+id/editTextTextCountry"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/car_ui_recyclerview_ic_down_private" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewAddress"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Address" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_destination_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="3dp"
+                        android:background="@drawable/search_border_rounded"
+                        android:backgroundTint="#F0F0F0"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/editTextTextAddress"
+                            android:layout_width="320dp"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Terms &amp; Conditions"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:drawableStart="@drawable/baseline_check_box_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:justificationMode="inter_word"
+                    android:text="Booking Confirmation – Your reservation is confirmed only after successful payment processing."
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:drawableStart="@drawable/baseline_check_box_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:justificationMode="inter_word"
+                    android:text="Cancellation and Refunds – Cancellations are subject to our policy. Refunds (if applicable) will be processed as per the cancellation terms stated at booking."
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:drawableStart="@drawable/baseline_check_box_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:justificationMode="inter_word"
+                    android:text="Payment Responsibility – You are responsible for providing accurate payment details. Any failed transactions may result in automatic cancellation."
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:drawableStart="@drawable/baseline_check_box_24"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:justificationMode="inter_word"
+                    android:text="Privacy and Security – Your personal and payment details are securely processed and not shared with third parties, except as required by law."
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Process to Payment"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

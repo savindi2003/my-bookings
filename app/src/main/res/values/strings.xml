@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MyBookings</string>
+    <string name="signin">Sign In</string>
+    <string name="signin_text">Sign in to explore amazing hotel deals, manage your bookings, and enjoy a seamless travel experience</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_text">You dont have account?</string>
+    <string name="signup_text1">Sign up to find amazing hotel deals, manage your reservations, and make your next trip unforgettable</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="signin_text_insignup">Already have an account?</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_text1">Discover your</string>
+    <string name="home_text2">perfect place to stay</string>
+    <string name="chip_text1">Hetel</string>
+    <string name="chip_text2">Apartments</string>
+    <string name="chip_text3">Resorts</string>
+    <string name="chip_text4">Villas</string>
+    <string name="chip_text5">Cabins</string>
+    <string name="chip_text6">Guest Houses</string>
+    <string name="home_text3">Best for you</string>
+    <string name="search_text1">Search Hotels</string>
+
+    <string name="hotel_name">Shangilla Hotel</string>
+    <string name="hotel_address">Galleface, Colombo</string>
+    <string name="hotel_rating">4.5</string>
+    <string name="hotel_short_description">A luxurious 5-star beachfront hotel in Galleface, Colombo, offering breathtaking ocean views, modern amenities, and world-class hospitality. </string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="placeApiKey">AIzaSyCZQdzReFFYZyqxjso9iS8b5_jnLKUXy2Y</string>
+
+
+</resources>

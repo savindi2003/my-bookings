@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialCalendarView">
+        <!-- Attribute for the selection color -->
+        <attr name="materialCalendarSelectionColor" format="color"/>
+
+        <!-- Attribute for the stroke color of the day today -->
+        <attr name="materialCalendarDayTodayStroke" format="color"/>
+    </declare-styleable>
+</resources>

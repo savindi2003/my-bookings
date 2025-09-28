@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252296319575",
+    "project_id": "my-bookings-f2d58",
+    "storage_bucket": "my-bookings-f2d58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252296319575:android:de709f6c935c0ebc7ec912",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.mybookings"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1TGBDZkOtC-P6rQlCMR8_o_ixI5ZlnOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

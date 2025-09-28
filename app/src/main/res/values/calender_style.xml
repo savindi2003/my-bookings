@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:fontFamily">@font/quicksand_regular</item>
+
+        <!-- Selection Indicator -->
+        <item name="materialCalendarSelectionColor">@color/green</item>
+        <item name="materialCalendarDayTodayStroke">#265728</item>
+
+        <!-- Confirm & Cancel Button Colors -->
+        <item name="colorControlHighlight">@color/green</item>
+        <item name="colorButtonNormal">@color/green</item>
+    </style>
+
+
+
+</resources>

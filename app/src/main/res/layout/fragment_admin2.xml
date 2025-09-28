@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="81dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView80"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="36dp"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Basic Information"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView80">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView94"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Type" />
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButton"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/radio_button_selector"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:text="Hotel" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView81"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Hotel Name" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_name_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_name"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView82"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Location" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_location_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_location"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView83"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Description" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_description_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="138dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_description"
+                                        android:layout_width="296dp"
+                                        android:layout_height="126dp"
+                                        android:layout_marginEnd="4dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:gravity="top|start"
+                                        android:inputType="textMultiLine"
+                                        android:maxLines="5"
+                                        android:minLines="3"
+
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:scrollbars="vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView84"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Avarage price for night (Rs)" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_name_price"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_price"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="number"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView76"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Update Hotel Info"
+                            android:textSize="24sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="360dp"
+                    android:layout_height="316dp"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Amenities"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="338dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.486"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView78">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="WiFi"
+                                    android:textColorLink="@color/color1" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Breakfast" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Spa" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Mini golf park" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Indoor pool" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/checkBox8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Restaurant" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Parking" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Gym" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="Laundry" />
+
+                                <CheckBox
+                                    android:id="@+id/checkBox12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/color1"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:text="AC" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="360dp"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.558"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView79"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Contact Details"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView79">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView85"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Email" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_email_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_email"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView86"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Phone no 1" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_mob1_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_mob1"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView87"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Phone no 2" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_mob2_r"
+                                    android:layout_width="320dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_mob2"
+                                        android:layout_width="296dp"
+                                        android:layout_height="47dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView88">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/facebook" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_fblink_r"
+                                    android:layout_width="280dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_fblink"
+                                        android:layout_width="256dp"
+                                        android:layout_height="43dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="320dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/instagram" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/hotel_inslink_r"
+                                    android:layout_width="280dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/editTextText_insterlink"
+                                        android:layout_width="256dp"
+                                        android:layout_height="43dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView88"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="32dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Social Media Link (Optional)"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout20" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout22">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView91"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Transport Service"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/add_icon" />
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/r3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout22"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView93"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Eat and Drink"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/add_icon" />
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/r2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView89"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Property Surrondings"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout21"
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView89">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView92"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Attractions"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/add_icon" />
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/r1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp" />
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="360dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="24dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Upload Images"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView90">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="100dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="100dp"
+                                        android:layout_height="70dp"
+                                        app:srcCompat="@drawable/colombo" />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="100dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView25"
+                                        android:layout_width="100dp"
+                                        android:layout_height="70dp"
+                                        app:srcCompat="@drawable/colombo" />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="100dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="5dp"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView26"
+                                        android:layout_width="100dp"
+                                        android:layout_height="70dp"
+                                        app:srcCompat="@drawable/room1" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:backgroundTint="@color/bottom_navigation"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:text="Update"
+                            android:textColor="@color/color1"
+                            app:icon="@drawable/cloud_upload"
+                            app:iconTint="#4CAF50"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout23"
+                            app:strokeColor="@color/color1"
+                            app:strokeWidth="1dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="360dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="24dp"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView96"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Google Map Location"
+                            android:textColor="@color/color1"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="158dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView96">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewlocation1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Latitude" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/location_layout1"
+                                    android:layout_width="296dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/location_lat"
+                                        android:layout_width="256dp"
+                                        android:layout_height="43dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textViewlocation2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Longitude" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/location_layout2"
+                                    android:layout_width="296dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginVertical="3dp"
+                                    android:background="@drawable/search_border_rounded"
+                                    android:backgroundTint="#F0F0F0"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/location_long"
+                                        android:layout_width="256dp"
+                                        android:layout_height="43dp"
+                                        android:background="@android:color/transparent"
+                                        android:ems="10"
+                                        android:fontFamily="@font/quicksand_regular"
+                                        android:inputType="text"
+                                        android:paddingStart="15dp"
+                                        android:paddingEnd="10dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/color1"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Update Account"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Button"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

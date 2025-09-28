@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".BookingsFragment">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Booking List"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Tabs (Ongoing, Completed, Canceled) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color1"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Ongoing"
+            android:textSize="14dp"
+            app:strokeColor="@color/color1"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bottom_navigation"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Completed"
+            android:textColor="@color/color1"
+            android:textSize="16sp"
+            app:strokeColor="@color/color1"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Booking List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Bottom Navigation Bar -->
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/heart"
+        android:title="Fav" />
+
+    <item
+        android:id="@+id/bokking"
+        android:icon="@drawable/booking"
+        android:title="Bokkings" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/user"
+        android:title="Profile"
+
+        />
+
+</menu>
