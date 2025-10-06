@@ -176,7 +176,10 @@ PAYHERE_SECRET=YYYYYYYY
 - Test scanning: use ML Kit scanner activity to scan the booking QR and verify check-in flow.
 - Test FCM: send test notifications from Firebase Console to verify handlers.
 
-## 👩‍💻 Author
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
 **Savindi Duleesha**  
  - 📧 savindiduleesga@gmail.com
  - 🌐 [Portfolio](https://savindi2003.github.io/my-portfolio/)
