@@ -10,26 +10,6 @@
 
 ## Table of Contents
 
-- [Features](#features)   
-- [Tech Stack](#tech-stack)  
-- [App Architecture (brief)](#app-architecture-brief)  
-- [Prerequisites](#prerequisites)  
-- [Installation & Setup](#installation--setup)  
-  - [Clone repo](#clone-repo)  
-  - [Import to Android Studio](#import-to-android-studio)  
-  - [Firebase setup](#firebase-setup)  
-  - [Google APIs (Maps & Places)](#google-apis-maps--places)  
-  - [PayHere configuration](#payhere-configuration)  
-  - [Configure ZXing & ML Kit (QR)](#configure-zxing--ml-kit-qr)  
-- [Firestore data model (example)](#firestore-data-model-example)  
-- [Firebase Security Rules (example)](#firebase-security-rules-example)  
-- [Running the app](#running-the-app)  
-- [Testing](#testing)  
-- [Build & Release](#build--release)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Acknowledgements](#acknowledgements)  
-- [Contact](#contact)
 
 ---
 
@@ -95,25 +75,35 @@ cd MyBookings
 
 ````
 
-### Import to Android Studio
+### Firebase Implementation
 
-- Open Android Studio → Open → select the project folder.
-- Let Gradle sync. Resolve any missing SDK/platform packages from the IDE.
-- Add `google-services.json`
-- Create a Firebase Android app inside your Firebase console and download `google-services.json`.
-- Place google-services.json into app/ directory.
-- Ensure your `app/build.gradle` includes:
+- https://console.firebase.google.com create a firebase projects
+- Google Analytics for your firebase project (Disable)
+- Download the `google-services.json` file and add into your module(app-level) root directory.
+
+- Ensure your `build.gradle.kts` (Project) includes:
 
 ```bash
-  apply plugin: 'com.google.gms.google-services'
+plugins {
+    id("com.google.gms.google-services") version "4.4.2" apply false
+}
+```
+- Ensure your `build.gradle.kts` (Module) includes:
+
+```bash
+plugins {
+    id("com.google.gms.google-services")
+}
 
 dependencies {
     // Firebase
-    implementation 'com.google.firebase:firebase-firestore:24.0.0'
-    implementation 'com.google.firebase:firebase-messaging:23.0.0'
-    implementation 'com.google.firebase:firebase-auth:21.0.0' // optional
+    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
+    implementation("com.google.firebase:firebase-firestore")    
+}
+````
+Note: Update versions to the latest stable ones in your build.gradle
 
-    // Google Maps & Places
+// Google Maps & Places
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.libraries.places:places:3.1.0'
 
@@ -128,10 +118,6 @@ dependencies {
     // implementation '.lk.payhere:android:VERSION' or follow PayHere docs
 
     // Other common libs...
-}
-````
-Note: Update versions to the latest stable ones in your build.gradle
-
 
 ### Google APIs (Maps & Places)
 
@@ -144,6 +130,13 @@ Note: Update versions to the latest stable ones in your build.gradle
     android:name="com.google.android.geo.API_KEY"
     android:value="@string/google_maps_key" />
 ````
+- Ensure your `build.gradle.kts` (Module) includes:
+  ````bash
+  dependencies {
+    implementation("com.google.android.gms:play-services-maps:19.0.0")
+    implementation ("com.google.android.gms:play-services-location:21.3.0")
+    implementation ("com.google.android.libraries.places:places:2.5.0")
+}
 
 ### PayHere configuration
 
@@ -163,6 +156,12 @@ PAYHERE_SECRET=YYYYYYYY
 - ZXing: used for generating QR images.
 - ML Kit: to scan barcodes/QR codes from camera input. Follow official docs for setup and camera permission handling.
 
+- Ensure your `build.gradle.kts` (Module) includes:
+  ````bash
+  dependencies {
+    implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
+    implementation ("com.google.mlkit:barcode-scanning:17.2.0")
+}
 
 ## Running the app
 
@@ -176,4 +175,9 @@ PAYHERE_SECRET=YYYYYYYY
 - Test QR generation: create a booking and view generated QR (ZXing).
 - Test scanning: use ML Kit scanner activity to scan the booking QR and verify check-in flow.
 - Test FCM: send test notifications from Firebase Console to verify handlers.
+
+## 👩‍💻 Author
+**Savindi Duleesha**  
+ - 📧 savindiduleesga@gmail.com
+ - 🌐 [Portfolio](https://savindi2003.github.io/my-portfolio/)
 
